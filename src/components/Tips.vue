@@ -58,50 +58,50 @@ LIMIT 11	-- nakonec můžeme omezit počet řádek, které chceme zobrazit
 					<v-card flat color="basil">
 						 <v-card-text>
 							<h2>Operátory</h2>
-							<strong>;</strong>      Zakončuje příkaz. Používej vždy na konci příkazu
+							<p><strong>;</strong>      Zakončuje příkaz. Používej vždy na konci příkazu</p>
 
-							<strong>--</strong>     Takto jednoduše zakomentuješ text pro poznámky
+							<p><strong>--</strong>     Takto jednoduše zakomentuješ text pro poznámky</p>
 
-							<strong>, </strong>      Používá se při výběru sloupců. Pomůcka - "a
+							<p><strong>, </strong>      Používá se při výběru sloupců. Pomůcka - "a"</p>
 							<p style="padding-left: 30px;"><em>SELECT toto, toto, toto FROM tabulka;</em></p>
-							<strong>.</strong>       Cesta
+							<p><strong>.</strong>       Cesta</p>
 							<p style="padding-left: 30px;">databaze.schema.tabulka</p>
-							<strong>=</strong>     Rovno, přiřazení, a další
+							<p><strong>=</strong>     Rovno, přiřazení, a další</p>
 
-							<strong>&lt;&gt; </strong>  Není rovno, vylučuje podmínku
+							<p><strong>&lt;&gt; </strong>  Není rovno, vylučuje podmínku</p>
 
-							<strong>' '</strong>     Jednoduché závorky - obalují řetězec v podmínkách ('text')
+							<p><strong>' '</strong>     Jednoduché závorky - obalují řetězec v podmínkách ('text')</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec = 'obsahuje tento text';</em></p>
-							<strong>“ “ </strong>  Dvojité závorky - Objekt, struktura v databázi (sloupec, databáze,...),
+							<p><strong>“ “ </strong>  Dvojité závorky - Objekt, struktura v databázi (sloupec, databáze,...)</p>
 							<p style="padding-left: 30px;"><em>SELECT “název_sloupce” FROM tabulka;</em></p>
-							<strong>&gt; </strong>    Větší než
+							<p><strong>&gt; </strong>    Větší než</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec &gt; 3;</em></p>
-							<strong>&lt;  </strong>   Menší než
+							<p><strong>&lt;  </strong>   Menší než</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec &lt; 3;</em></p>
-							<strong>&gt;= </strong>  Větší nebo rovno
+							<p><strong>&gt;= </strong>  Větší nebo rovno</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec &gt;= 3;</em></p>
-							<strong>&lt;= </strong>  Menší nebo rovno
+							<p><strong>&lt;= </strong>  Menší nebo rovno</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec &lt;= 3;</em></p>
-							<strong>+  </strong>   Sčítá, přidává
+							<p><strong>+  </strong>   Sčítá, přidává</p>
 							<p style="padding-left: 30px;"><em>SELECT 2 + 3;</em></p>
-							<strong>&lt;=&gt;</strong> Rovno včetně hodnot NULL
+							<p><strong>&lt;=&gt;</strong> Rovno včetně hodnot NULL</p>
 
-							<strong>-</strong>      Odečítá, ubírá
+							<p><strong>-</strong>      Odečítá, ubírá</p>
 
-							<strong>* </strong>     Vybere všechno
+							<p><strong>* </strong>     Vybere všechno</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka;</em></p>
 							<p style="padding-left: 30px;">Násobí číselné údaje</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec * 2; nebo SELECT 2 * 3;</em></p>
-							<strong>/</strong>     Dělí
+							<p><strong>/</strong>     Dělí</p>
 							<p style="padding-left: 30px;"><em>SELECT 2 / 3;</em></p>
-							<strong>%</strong>    Nahrazuje libovolný počet znaků (Používám, když vím pouze část textu), používá se ve spojení s
-							LIKE/iLIKE
+							<p><strong>%</strong>    Nahrazuje libovolný počet znaků (Používám, když vím pouze část textu), používá se ve spojení s
+							LIKE/iLIKE</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec LIKE '%bla%';</em></p>
-							<strong>_</strong>      Nahrazuje jeden znak v textu
+							<p><strong>_</strong>      Nahrazuje jeden znak v textu</p>
 							<p style="padding-left: 30px;"><em>SELECT * FROM tabulka WHERE sloupec LIKE 'te_t';</em></p>
-							<strong>||</strong>      Slučovač. Stejné jako CONCAT Spojí dva sloupce do jednoho.
+							<p><strong>||</strong>      Slučovač. Stejné jako CONCAT Spojí dva sloupce do jednoho</p>
 
-							<strong>::</strong>     Změní datový typ ve sloupci. Stejné jako CAST()
+							<p><strong>::</strong>     Změní datový typ ve sloupci. Stejné jako CAST()</p>
 							<p style="padding-left: 30px;">datový_typ :: jiný_datový_typ</p>
 							<p style="padding-left: 30px;"><em>SELECT CAST('2017-08-25' AS datetime);</em></p>
 							&nbsp;
